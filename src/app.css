@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.section {
+  padding: 10rem;
+}
+
+.standard {
+  display: flex;
+  justify-content: center;
+}

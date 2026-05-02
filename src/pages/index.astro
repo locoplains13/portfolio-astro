@@ -1,35 +1,62 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout>
-	<section class="section">
-		<div class="standard">
-			
-		</div>
-	</section>
-
-	<section>
-		<div class="standard">
-			<div class="hover-3d">
-			<!-- content -->
-			<figure class="max-w-100 rounded-2xl">
-				<img src="https://img.daisyui.com/images/stock/creditcard.webp" alt="3D card" />
-			</figure>
-			<!-- 8 empty divs needed for the 3D effect -->
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			</div>
-		</div>
-	</section>
+  <Navbar />
+  <section class="section">
+    <div class="flex flex-col">
+      <div class="flex flex-col text-center gap-5 mb-12">
+        <h1 class="text-3xl md:text-5xl font-bold mt-12">
+          Angel Roberto Andrade Rodriguez
+        </h1>
+        <div class="p-5">
+          <h3 class="text-xl md:text-3xl">
+            I'm an Interactive System Designer and UI/UX Designer
+          </h3>
+        </div>
+        <div class="flex flex-row justify-center gap-5">
+          <a href="https://github.com/locoplains13"
+            ><img
+              src="/src/assets/github.png"
+              class="h-10 w-10 md:h-15 md:w-15 transition-all duration-300 hover:-translate-y-2"
+            /></a
+          >
+          <a href="https://www.linkedin.com/in/angelandrader/?skipRedirect=true"
+            ><img
+              src="src/assets/linkedin.webp"
+              class="h-10 w-10 md:h-15 md:w-15 transition-all duration-300 hover:-translate-y-2"
+            /></a
+          >
+        </div>
+      </div>
+      <div
+        class="md:grid md:grid-cols-2 flex flex-col justify-center place-items-center gap-8"
+      >
+        <a
+          href="/neorush"
+          class="hover:-translate-y-2 hover:scale-103 transition-all"
+          ><Card /></a
+        >
+        <a
+          href="/studysidekick"
+          class="hover:-translate-y-2 hover:scale-103 transition-all"
+          ><Card /></a
+        >
+        <a
+          href="/inr-proyecto"
+          class="hover:-translate-y-2 hover:scale-103 transition-all"
+          ><Card /></a
+        >
+        <a
+          href="/sani"
+          class="hover:-translate-y-2 hover:scale-103 transition-all"
+          ><Card /></a
+        >
+      </div>
+    </div>
+  </section>
 </Layout>

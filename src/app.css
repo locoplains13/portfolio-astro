@@ -2,10 +2,8 @@
 @plugin "daisyui";
 
 .section {
-  padding: 10rem;
-}
-
-.standard {
+  padding-x: 5rem;
+  padding-y: 8rem;
   display: flex;
   justify-content: center;
 }

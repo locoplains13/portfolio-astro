@@ -3,7 +3,46 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="section">
-    <h1>this is neorush</h1>
+  <section class="section mt-20 mb-10 px-10 md:px-0">
+    <div class="flex flex-col justify-center place-items-center gap-8">
+      <div class="flex flex-row gap-10">
+        <h1 class="text-5xl font-bold">NeonRush</h1>
+        <a
+          href="https://banishlight.itch.io/neonrush"
+          class="hover:scale-115 transition-all"
+          target="_blank"
+        >
+          <img src="src/assets/itchio.svg" class="w-14" />
+        </a>
+      </div>
+      <div class="text-left flex flex-col gap-4 md:max-w-5xl">
+        <p>
+          A game developed in Unreal Engine, it won the Winter Games Voter's
+          Choice Awards
+        </p>
+        <p>
+          I worked on this game as a Test Lead. My job was to gather testers to
+          play the game and compile data on how the game could be improved upon
+          for further development.
+        </p>
+        <p>
+          What I did was let the beta testers play the game freely without any
+          instructions coming directly from me and I would take notes, just as
+          an observer, even if they asked me for help or guides. If they found
+          anything from the UI, controllers, or general gameplay confusing even
+          with the in-game tutorial, we would make the changes accordingly to
+          make it easier to understand in further testing.
+        </p>
+      </div>
+      <iframe
+        width="md:860"
+        height="md:515"
+        src="https://www.youtube.com/embed/KRMvcCpMPc0?si=c8IvGLEcttcJfXa3"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
   </section>
 </Layout>

@@ -1,18 +1,22 @@
+---
+const {
+  image = "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp",
+  alt = "Image",
+  title = "Card Title",
+  badgeText = "NEW",
+  description = "A card component has a figure, a body part, and inside body there are title and actions parts",
+} = Astro.props;
+---
+
 <div class="card bg-base-100 w-96 shadow-sm">
   <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
+    <img src={image} alt={alt} />
   </figure>
   <div class="card-body">
     <h2 class="card-title">
-      Card Title
-      <div class="badge badge-secondary">NEW</div>
+      {title}
+      {badgeText ? <div class="badge badge-secondary">{badgeText}</div> : null}
     </h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <div class="badge badge-outline">Fashion</div>
-      <div class="badge badge-outline">Products</div>
-    </div>
+    <p>{description}</p>
   </div>
 </div>

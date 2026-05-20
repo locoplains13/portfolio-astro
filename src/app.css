@@ -2,9 +2,9 @@
 @plugin "daisyui";
 
 .section {
-  padding-x: 5rem;
-  padding-y: 8rem;
+  padding: 8rem 2rem 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 

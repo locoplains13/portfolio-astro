@@ -4,6 +4,57 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <section class="section">
-    <h1>this is study sidekick</h1>
+    <div class="flex flex-col justify-center place-items-center gap-8">
+      <div class="flex flex-row gap-10">
+        <h1 class="text-5xl font-bold">Study Sidekick</h1>
+        <a
+          href="https://github.com/locoplains13/StudySidekick"
+          class="hover:scale-115 transition-all"
+          target="_blank"
+        >
+          <img src="src/assets/github.png" class="w-14" />
+        </a>
+      </div>
+      <div class="text-left flex flex-col gap-4 md:max-w-5xl">
+        <p>
+          This is an application developed in Java using its frameworks for
+          making desktop apps JavaFx
+        </p>
+        <p>
+          My university team and I worked on it throughout the entire semester,
+          in which we all managed to design and develop the multiple views of
+          the app. It uses a MVC (Model View Controller) architecture. We
+          designed multiple UML diagrams for the scripts. I played a part in
+          designing the calendar and the timer systems
+        </p>
+        <p>
+          The app, as you can see, has a calendar at the homepage to choose
+          which day of the week, and a checklist to see which tasks are due for
+          the day. There is also a timer that appears whenever you click on
+          start a task and takes you back to the homepage to keep track of which
+          tasks you still have left to do. You can also edit the app's settings
+          so the app can alert you at some point about any tasks that are due
+          later.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section flex justify-center place-items-center">
+    <div class="carousel md:max-w-5xl w-full">
+      <div id="item1" class="carousel-item w-full">
+        <img src="src/assets/img1.png" class="w-full" />
+      </div>
+      <div id="item2" class="carousel-item w-full">
+        <img src="src/assets/img2.png" class="w-full" />
+      </div>
+      <div id="item3" class="carousel-item w-full">
+        <img src="src/assets/img3.png" class="w-full" />
+      </div>
+    </div>
+    <div class="flex w-full justify-center gap-2 py-2">
+      <a href="#item1" class="btn btn-xs">1</a>
+      <a href="#item2" class="btn btn-xs">2</a>
+      <a href="#item3" class="btn btn-xs">3</a>
+    </div>
   </section>
 </Layout>

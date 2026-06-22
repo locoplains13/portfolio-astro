@@ -4,6 +4,51 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <section class="section">
-    <h1>Este es el proyecto INR</h1>
+    <div class="flex flex-col justify-center place-items-center gap-8">
+      <div class="flex flex-row gap-10">
+        <h1 class="text-5xl font-bold">Study Sidekick</h1>
+        <a
+          href="https://github.com/locoplains13/StudySidekick"
+          class="hover:scale-115 transition-all"
+          target="_blank"
+        >
+          <img src="src/assets/github.png" class="w-14" />
+        </a>
+      </div>
+      <div class="text-left flex flex-col gap-4 md:max-w-5xl">
+        <p>
+          This is an application I designed for the National Institute of Rehabilitation.
+        </p>
+        <p>
+          My work here was to create designs based on requirements provided by healthcare and rehabilitation professionals.
+          The application is used as a tool by healthcare professionals to time and measure the quality of rehab exercises.
+          It starts with a patient register screen, where if you have an active patient ID, you can continue with the medical
+          process, otherwise you have to register their name and last name.
+        </p>
+        <p>
+          Second step is to select an item to measure with the patient, and then to click play on the timer. This is setup automatically,
+          with the system assigning the appropriate alloted time to measure each exercise. The professional can rate the exercises performed by the patient
+          with the scale on the right of the timer. The last screen shows the final results that the professional can either choose to keep or discard.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section flex justify-center place-items-center">
+    <div class="carousel md:max-w-5xl w-full">
+      <div id="item1" class="carousel-item w-full">
+        <img src="src/assets/img1.png" class="w-full" />
+      </div>
+      <div id="item2" class="carousel-item w-full">
+        <img src="src/assets/img2.png" class="w-full" />
+      </div>
+      <div id="item3" class="carousel-item w-full">
+        <img src="src/assets/img3.png" class="w-full" />
+      </div>
+    </div>
+    <div class="flex w-full justify-center gap-2 py-2">
+      <a href="#item1" class="btn btn-xs">1</a>
+      <a href="#item2" class="btn btn-xs">2</a>
+      <a href="#item3" class="btn btn-xs">3</a>
+    </div>
   </section>
 </Layout>
